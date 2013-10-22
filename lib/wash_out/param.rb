@@ -68,6 +68,7 @@ module WashOut
           when 'date';      :to_date
           when 'datetime';  :to_datetime
           when 'time';      :to_time
+	  when 'base64Binary'; :to_s
           else raise RuntimeError, "Invalid WashOut simple type: #{type}"
         end
 
